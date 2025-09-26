@@ -1,3 +1,5 @@
+/* ---- GLOBAL STYLES ---- */
+
 @font-face {
     font-family: Norse;
     src: url(font/Norse-Bold.otf);
@@ -6,7 +8,11 @@
 body {
     margin: 0;
     display: flex;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
 }
+
+/* ---- DISPLAY SECTION ---- */
 
 #splashDisplay {
     display: flex;
@@ -47,28 +53,62 @@ footer>a {
     color: inherit;
 }
 
+/* ---- FORM SECTION ---- */
+
 #infoTab {
-    /* width: 70vw;
-    height: 100vh; */
+    align-content: center;
+    width: 70vw;
+    height: 100vh;
     background-color: aliceblue;
 }
 
+#infoTab>.boldTxt {
+    width: 32vw;
+    margin: 2.4vw;
+}
+
+.boldTxt {
+    margin: 0.5vw 2.4vw;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+/* -- FORM INPUT AREA -- */
+
 #startForm {
+    padding: 0.6vw 0vw;
     background-color: white;
     box-shadow: 0px 6px 8px -8px;
 }
 
 .dataFields {
     display: flex;
-    justify-content: space-around;
     align-items: center;
 }
 
 .dataFields>div {
     display: flex;
     flex-direction: column;
+    margin: 0.8vw 2.4vw;
 }
 
 button {
-    margin: 1vw;
+    width: 12vw;
+    height: 5vh;
+    margin: 1vw 2.4vw;
+    border-radius: 0.5vw;
+    border: solid 0.15vw #596D48;
+    background-color: #596D48;
+    color: white;
+    font-size: 16px;
+}
+
+.gotAcc {
+    margin-left: 2.4vw;
+    font-weight: 100;
+}
+
+.gotAcc>a {
+    color: #596D48;
+    text-decoration: none;
 }
